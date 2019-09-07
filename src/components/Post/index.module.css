@@ -1,0 +1,67 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.date {
+    color: #ccc;
+    margin-top: 8px;
+}
+
+.author {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date, .author  {
+    text-align: center;
+}
+
+.edit {
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:20px;
+    font-size:14px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  
+.edit:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  
+.edit:before,
+.edit:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  
+.edit:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  
+.edit:hover:before,
+.edit:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }

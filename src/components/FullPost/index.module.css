@@ -1,0 +1,172 @@
+.fullPost {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    padding: 20px;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.edit label {
+    display: block;
+    color: grey;
+}
+
+.edit button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color: #fa923f;
+}
+
+.edit button:hover,
+.edit button:active {
+    color: #521751;
+}
+
+.edit button.Delete {
+    color: red;
+}
+
+.edit button.Delete:hover,
+.edit button.Delete:active {
+    color: darkred;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.infoBlock {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.author, .date {
+    font-size: 18px;
+}
+
+.author {
+    color: green;
+    font-weight: 600;
+}
+
+.date {
+    color: #ccc;
+}
+
+.edit {
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:17px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  
+.edit:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  
+.edit:before,
+.edit:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  
+.edit:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  
+.edit:hover:before,
+.edit:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+  .comments {
+      max-height: 400px;
+      overflow-y: scroll;
+      font-family: Arial, sans-serif;
+      margin-top: 40px;
+      font-size: 17px;
+      font-weight: bold;
+  }
+
+  
+  .addComment {
+      margin-top: 20px;
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #efefef;
+  }
+  
+  .commentArea {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      background: 0 0;
+      width: 75%;
+      border: 0;
+      color: #262626;
+      height: 18px;
+      max-height: 80px;
+      outline: 0;
+      padding: 0;
+  }
+  
+  .buttonAdd {
+    flex-grow: 1;
+    font-size: 13px;
+    line-height: 18px;
+    background: transparent;
+    border: 0;
+    font-weight: 600;
+    color: #3897f0;
+    display: inline;
+    padding: 0;
+  }
+  
+  .buttonAdd:disabled {
+    opacity: 0.3;
+  }
+
+  
+  .buttonAdd:active {
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: 800px) {
+    .commentArea::placeholder {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .commentArea::placeholder {
+      font-size: 11px;
+    }
+  }

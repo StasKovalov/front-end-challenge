@@ -1,0 +1,7 @@
+export const AXIOS_REQUEST = "AXIOS_REQUEST";
+export const POSTS_LOADED = "POSTS_LOADED";
+export const RESPONSE_ERROR = "RESPONSE_ERROR";
+export const POST_ADDED = "POST_ADDED";
+export const OPENED_FULL_POST = "OPENED_FULL_POST";
+export const UPDATE_POST = "UPDATE_POST";
+export const ADD_COMMENT = "ADD_COMMENT";
