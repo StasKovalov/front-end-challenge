@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## `yarn' to download all packages from package.json [dependencies, devDependencies]`
+## `yarn`
+Will download all packages from package.json [dependencies, devDependencies]
 ### `AFTER `
 ### `yarn start`
 
