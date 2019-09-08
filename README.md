@@ -14,6 +14,5 @@ $ yarn install or yarn
 
 Start the server
 ```
-javascript
 yarn start
 ```
